@@ -1,0 +1,40 @@
+/* TankFlow — Typography tokens
+   Display: Space Grotesk (technical grotesque, headings & metrics)
+   Body/UI: IBM Plex Sans (legible operational copy)
+   Data:    IBM Plex Mono (ISO container codes, IDs, timestamps) */
+
+:root {
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /* Type scale (px-based, comfortable density) */
+  --text-2xs: 11px;
+  --text-xs:  12px;
+  --text-sm:  13px;
+  --text-base:14px;
+  --text-md:  15px;
+  --text-lg:  17px;
+  --text-xl:  20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 38px;
+  --text-5xl: 52px;
+
+  /* Weights */
+  --fw-regular: 400;   /* @kind font */
+  --fw-medium: 500;    /* @kind font */
+  --fw-semibold: 600;  /* @kind font */
+  --fw-bold: 700;      /* @kind font */
+
+  /* Line heights */
+  --lh-tight: 1.1;     /* @kind other */
+  --lh-snug: 1.3;      /* @kind other */
+  --lh-normal: 1.5;    /* @kind other */
+
+  /* Letter spacing */
+  --ls-tight: -0.02em; /* @kind other */
+  --ls-normal: 0;      /* @kind other */
+  --ls-wide: 0.04em;   /* @kind other */
+  --ls-caps: 0.08em;   /* @kind other */
+}

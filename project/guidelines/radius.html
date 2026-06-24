@@ -1,0 +1,25 @@
+<!-- @dsCard group="Spacing" viewport="700x170" name="Radios de esquina" subtitle="Engineered, no pill-soft (excepto chips)" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--bg-app); color:var(--text-primary); font-family:var(--font-body); padding:22px; }
+  .row { display:flex; gap:16px; align-items:flex-start; }
+  .item { text-align:center; }
+  .box { width:72px; height:56px; background:var(--surface-raised); border:1px solid var(--border-strong); }
+  .tok { font-family:var(--font-mono); font-size:10px; color:var(--text-muted); margin-top:7px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="item"><div class="box" style="border-radius:var(--radius-xs)"></div><div class="tok">xs · 3</div></div>
+    <div class="item"><div class="box" style="border-radius:var(--radius-sm)"></div><div class="tok">sm · 5</div></div>
+    <div class="item"><div class="box" style="border-radius:var(--radius-md)"></div><div class="tok">md · 8</div></div>
+    <div class="item"><div class="box" style="border-radius:var(--radius-lg)"></div><div class="tok">lg · 12</div></div>
+    <div class="item"><div class="box" style="border-radius:var(--radius-xl)"></div><div class="tok">xl · 16</div></div>
+    <div class="item"><div class="box" style="width:90px;border-radius:var(--radius-pill)"></div><div class="tok">pill</div></div>
+  </div>
+</body>
+</html>

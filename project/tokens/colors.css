@@ -1,0 +1,75 @@
+/* TankFlow — Color tokens
+   Dark "control-room" industrial palette. Deep steel-slate base, signal-blue
+   brand accent, and operational status signals tuned for a container depot. */
+
+:root {
+  /* ── Steel / neutral scale (cool slate, base UI surfaces & text) ── */
+  --steel-950: #080b12;  /* deepest app background */
+  --steel-900: #0e131d;  /* app background */
+  --steel-880: #121828;  /* sunken panels */
+  --steel-850: #151b28;  /* card / surface */
+  --steel-800: #1b2230;  /* raised surface, header */
+  --steel-750: #222b3b;  /* hover surface */
+  --steel-700: #2b3546;  /* borders strong */
+  --steel-650: #364154;  /* dividers on dark */
+  --steel-600: #475264;  /* disabled / faint */
+  --steel-500: #5d6a7e;  /* muted text */
+  --steel-400: #7e8da1;  /* secondary text */
+  --steel-300: #a6b2c2;  /* tertiary / icon */
+  --steel-200: #c9d2de;  /* high-contrast secondary */
+  --steel-100: #e6ebf1;  /* near-white text */
+  --steel-050: #f4f7fa;  /* white text on dark */
+
+  /* ── Brand: signal blue ── */
+  --blue-700: #0a6dbf;
+  --blue-600: #0e84db;
+  --blue-500: #1f9cf0;  /* primary brand */
+  --blue-400: #44b4f7;  /* hover / glow */
+  --blue-300: #7fceff;
+  --blue-100: #d2ecff;
+  --blue-950: #0a2238;  /* tinted dark surface */
+
+  /* ── Operational signals ── */
+  --green-500: #2dd4a0;  /* disponible / OK */
+  --green-400: #4ee0b4;
+  --green-950: #07261d;
+  --amber-500: #f5a623;  /* atención / en espera */
+  --amber-400: #ffbb47;
+  --amber-950: #2c1d04;
+  --red-500:   #f4503e;  /* crítico / >30 días */
+  --red-400:   #ff6e5e;
+  --red-950:   #2c0c08;
+
+  /* ── Repair-type accents (5 categorías) ── */
+  --rep-estructural: #f9685a; /* coral-red */
+  --rep-interior:    #2dd4bf; /* teal */
+  --rep-rotulacion:  #f5b531; /* gold */
+  --rep-pintura:     #5b9df9; /* blue */
+  --rep-regulatoria: #a78bfa; /* violet */
+
+  /* ── Semantic aliases ── */
+  --bg-app:        var(--steel-900);
+  --bg-sunken:     var(--steel-880);
+  --surface-card:  var(--steel-850);
+  --surface-raised:var(--steel-800);
+  --surface-hover: var(--steel-750);
+
+  --border-subtle: rgba(255,255,255,0.06);
+  --border-default:rgba(255,255,255,0.10);
+  --border-strong: var(--steel-700);
+
+  --text-primary:   var(--steel-050);
+  --text-secondary: var(--steel-300);
+  --text-muted:     var(--steel-500);
+  --text-inverse:   var(--steel-950);
+
+  --accent:        var(--blue-500);
+  --accent-hover:  var(--blue-400);
+  --accent-quiet:  var(--blue-950);
+
+  --status-ok:       var(--green-500);
+  --status-warn:     var(--amber-500);
+  --status-critical: var(--red-500);
+
+  --focus-ring: rgba(31,156,240,0.55);
+}

@@ -1,0 +1,31 @@
+<!-- @dsCard group="Brand" viewport="700x200" name="Iconografía — Lucide" subtitle="Lucide, trazo 1.75px, vía CDN" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--bg-app); color:var(--text-primary); font-family:var(--font-body); padding:24px; }
+  .row { display:flex; gap:26px; flex-wrap:wrap; }
+  .item { display:flex; flex-direction:column; align-items:center; gap:7px; width:70px; }
+  .item i { color:var(--text-secondary); }
+  .lbl { font-family:var(--font-mono); font-size:10px; color:var(--text-muted); text-align:center; }
+  .item.act i { color:var(--accent); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="item act"><i data-lucide="container" width="26" height="26"></i><div class="lbl">container</div></div>
+    <div class="item"><i data-lucide="log-in" width="26" height="26"></i><div class="lbl">log-in</div></div>
+    <div class="item"><i data-lucide="clipboard-check" width="26" height="26"></i><div class="lbl">clipboard-check</div></div>
+    <div class="item"><i data-lucide="wrench" width="26" height="26"></i><div class="lbl">wrench</div></div>
+    <div class="item"><i data-lucide="paint-roller" width="26" height="26"></i><div class="lbl">paint-roller</div></div>
+    <div class="item"><i data-lucide="shield-check" width="26" height="26"></i><div class="lbl">shield-check</div></div>
+    <div class="item"><i data-lucide="clock-alert" width="26" height="26"></i><div class="lbl">clock-alert</div></div>
+    <div class="item"><i data-lucide="truck" width="26" height="26"></i><div class="lbl">truck</div></div>
+    <div class="item"><i data-lucide="layout-dashboard" width="26" height="26"></i><div class="lbl">dashboard</div></div>
+  </div>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons({ attrs: { 'stroke-width': 1.75 } });</script>
+</body>
+</html>

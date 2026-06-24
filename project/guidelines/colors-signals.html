@@ -1,0 +1,24 @@
+<!-- @dsCard group="Colors" viewport="700x170" name="Señales operativas" subtitle="OK / atención / crítico status signals" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--bg-app); color:var(--text-primary); font-family:var(--font-body); padding:20px; }
+  .row { display:flex; gap:12px; }
+  .sw { flex:1; border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--border-subtle); }
+  .chip { height:54px; display:flex; align-items:center; padding:0 14px; font-weight:var(--fw-semibold); color:#08111a; font-size:var(--text-sm); }
+  .meta { padding:8px 12px; background:var(--surface-card); }
+  .tok { font-family:var(--font-mono); font-size:var(--text-2xs); color:var(--text-secondary); }
+  .use { font-size:var(--text-2xs); color:var(--text-muted); margin-top:2px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw"><div class="chip" style="background:var(--green-500)">Listo</div><div class="meta"><div class="tok">--status-ok</div><div class="use">Disponible</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--amber-500)">Atención</div><div class="meta"><div class="tok">--status-warn</div><div class="use">Reparación pendiente</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--red-500)">Crítico</div><div class="meta"><div class="tok">--status-critical</div><div class="use">+30 días sin terminar</div></div></div>
+  </div>
+</body>
+</html>

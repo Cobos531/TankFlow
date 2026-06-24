@@ -1,0 +1,24 @@
+<!-- @dsCard group="Brand" viewport="700x220" name="Logo" subtitle="Marca completa y mark en tile azul" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--bg-app); color:var(--text-primary); font-family:var(--font-body); padding:24px; }
+  .wrap { display:flex; align-items:center; gap:40px; }
+  .block { display:flex; flex-direction:column; gap:10px; }
+  .lbl { font-family:var(--font-mono); font-size:var(--text-2xs); color:var(--text-muted); }
+  .onlight { background:var(--steel-050); border-radius:var(--radius-md); padding:16px 20px; display:inline-flex; }
+  img.full { height:40px; }
+  img.mark { height:56px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="block"><img class="full" src="../assets/logo-full.svg" alt="TankFlow"><div class="lbl">logo-full.svg · sobre oscuro</div></div>
+    <div class="block"><img class="mark" src="../assets/logo-mark.svg" alt="TankFlow mark"><div class="lbl">logo-mark.svg</div></div>
+    <div class="block"><div class="onlight"><img class="full" src="../assets/logo-full.svg" alt="TankFlow"></div><div class="lbl">también legible sobre claro</div></div>
+  </div>
+</body>
+</html>

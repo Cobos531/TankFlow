@@ -1,0 +1,40 @@
+<!-- @dsCard group="Components" viewport="700x320" name="Layout" subtitle="Card · SectionHeader" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin:0; background:var(--bg-app); color:var(--text-primary); font-family:var(--font-body); padding:22px; }
+  .stack { display:flex; flex-direction:column; gap:16px; }
+  .p { color:var(--text-secondary); font-size:var(--text-sm); line-height:1.5; margin:0; }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="../../_ds_bundle.js"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script type="text/babel">
+    const { Card, SectionHeader, Button, StatusBadge } = window.TankFlowDesignSystem_32ec47;
+    const I = (n) => <i data-lucide={n}></i>;
+    function Demo() {
+      return (
+        <div className="stack">
+          <SectionHeader eyebrow="Patio · Depósito Norte" title="Panel de control"
+            subtitle="142 equipos · actualizado hace 4 min"
+            actions={<Button size="sm" iconLeft={I('log-in')}>Registrar ingreso</Button>} />
+          <Card title="Equipo MSKU 204418-7"
+            actions={<StatusBadge status="en-reparacion" />}>
+            <p className="p">El contenedor ingresó el 12 de junio. Inspección estructural completada; se requiere reparación de panel lateral. Repuesto con ETA 21 de junio.</p>
+          </Card>
+        </div>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+    setTimeout(() => window.lucide && lucide.createIcons({ attrs: { 'stroke-width': 1.75 } }), 60);
+  </script>
+</body>
+</html>

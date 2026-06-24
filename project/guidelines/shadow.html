@@ -1,0 +1,23 @@
+<!-- @dsCard group="Spacing" viewport="700x190" name="Elevación & glow" subtitle="Sombras y glow de señal sobre superficie oscura" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; background:var(--bg-app); color:var(--text-primary); font-family:var(--font-body); padding:26px; }
+  .row { display:flex; gap:22px; }
+  .item { text-align:center; }
+  .box { width:108px; height:62px; background:var(--surface-card); border:1px solid var(--border-subtle); border-radius:var(--radius-md); }
+  .tok { font-family:var(--font-mono); font-size:10px; color:var(--text-muted); margin-top:9px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-sm)"></div><div class="tok">shadow-sm</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-md)"></div><div class="tok">shadow-md</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--shadow-lg)"></div><div class="tok">shadow-lg</div></div>
+    <div class="item"><div class="box" style="box-shadow:var(--glow-accent)"></div><div class="tok">glow-accent</div></div>
+  </div>
+</body>
+</html>

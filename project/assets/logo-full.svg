@@ -1,0 +1,14 @@
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TankFlow">
+  <rect x="0" y="0" width="48" height="48" rx="11" fill="#1f9cf0"></rect>
+  <rect x="0" y="0" width="48" height="48" rx="11" fill="url(#tff_g)" fill-opacity="0.35"></rect>
+  <rect x="10" y="29" width="28" height="7" rx="1.6" fill="#fff"></rect>
+  <rect x="10" y="19.5" width="28" height="7" rx="1.6" fill="#fff" fill-opacity="0.86"></rect>
+  <rect x="16.5" y="10" width="21.5" height="7" rx="1.6" fill="#fff" fill-opacity="0.62"></rect>
+  <text x="62" y="32.5" font-family="&#39;Space Grotesk&#39;, sans-serif" font-size="25" font-weight="700" letter-spacing="-0.5" fill="#f4f7fa">Tank<tspan fill="#44b4f7">Flow</tspan></text>
+  <defs>
+    <linearGradient id="tff_g" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#44b4f7"></stop>
+      <stop offset="1" stop-color="#0a6dbf"></stop>
+    </linearGradient>
+  </defs>
+</svg>
